@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Michael's Auto Parts</title>
+    <link rel="stylesheet" href="./CSS/main.css">
+  </head>
+  
+  
+  <body>
+     
+     <!-- NAV -->
+    
+    <div class="navbar">
+      <a href="#home">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn"> Store </button>
+        <div class="dropdown-content">
+          <a href="#store">Brakes</a>
+          <a href="#store">Engine</a>
+          <a href="#store">Transmission</a>
+        </div>
+      </div> 
+      <a href="#how-to">How To</a>
+      <a href="#order">Order</a>
+    </div>
+    
+      <!-- END NAV  -->
+      
+      <!-- HOME -->
+        <div id="home">
+          <div class="container">
+            <div class="main-logo">
+              
+              
+              <!-- Code below is temporary until I can use Javascript. Want to wrap text around the photo and remove one of the photos.-->
+              <span class="head-round"><h1> <img class="logo-1" src="./images/Logo.jpeg" alt="Logo">Michael's Auto Parts <img class="logo-2" src="./images/Logo.jpeg" alt="Logo"></h1></span>
+              
+             
+              
+              <p>All of the parts you need in one loaction <br>
+              Always in stock and free shipping on all orders!</p>
+            
+            
+            
+            </div>
+          </div>
+        </div>
+      <!--END HOME-->
+
+
+      <!-- STORE -->
+        <section id="store">
+          <div class="container">
+            <h1>Store</h1>
+            <div class="flex-container">
+
+             
+
+              <div class="item-container">
+                <div class="store-item">
+                    <img src="./images/Brakes.jpg" alt="Brakes">
+                    <div class="photo-overlay">
+                      <p>We have everything from Brake pads to <br> Calipers and hardware! </p>
+                      <h3 class="white-head">Click to Learn more</h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="item-container">
+              <div class="store-item">
+                  <img src="./images/Engine .jpg" alt="Engine">
+                  <div class="photo-overlay">
+                    <p>From Replacement <br> engines to rebuild kits. <br> We have it all! </p>
+                    <h3 class="white-head">Click to Learn more</h3>
+                  </div>
+              </div>
+          </div>
+
+
+          <div class="item-container">
+            <div class="store-item">
+                <img src="./images/Transmission.jpg" alt="Transmission">
+                <div class="photo-overlay">
+                  <p>From Replacement <br> Transmissions to rebuild kits. <br> We have it all! </p>
+                  <h3 class="white-head">Click to Learn more</h3>
+                </div>
+            </div>
+        </div>
+
+
+            </div>
+          </div>
+        </section>
+
+       <!-- END STORE -->
+      
+
+   
+      
+      <!-- HOW To Section -->
+
+      <!-- End HOW to section -->
+     
+
+      <!-- ORDER FORM -->
+          <section id="order">
+            <div>
+              <div>
+                <h1>Order Form</h1>
+              </div>
+                <p>Please input your info below for us to better help you</p>
+              
+              <div>
+                
+                <form action="" method="POST">
+                 
+                  <input type="text" value="" placeholder="Name">
+                  <input type="text" value="" placeholder="Email">
+                  <input type="text" value="" placeholder="Phone Number"><br><br>
+                 
+                  <label class="Vehicle" > Please Select your Vehicle</label><br><br>
+                 
+                  <select id="year" name="year">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                  </select>
+                
+                  <select id="Make">
+                    <option value="Audi">Audi</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Chevy">Chevy</option>
+                    <option value="Dodge">Dodge</option>
+                    <option value="Chrysler">Chrysler</option>
+                  </select>
+
+                <input type="text" value="" placeholder="Model">
+                
+                <div class="parts-select">
+                <label class="Part">Please select the type of parts you are looking for:</label><br><br>
+                  
+                  <input type="checkbox" id="brakes" value="brakes">
+                  <label for="brakes">Brakes</label><br><br>
+                  <input type="checkbox" id="Transmission" value="">
+                  <label for="transmission">Transmissions</label><br><br>
+                  <input type="checkbox" id="engine" value="">
+                  <label for="engine">Engine</label><br><br>
+                  <input type="submit" value="Submit">
+                </div>   
+                    
+                </form>
+              </div>              
+              
+              
+              
+              
+              </div>
+
+          </section>  
+            
+      <!-- END ORDER FROM -->
+
+      <!-- FOOTER -->
+        <footer>
+          <p>Michael Spearin &nbsp;|&nbsp; 2020 &copy;</p>
+        </footer>
+
+      <!-- END FOOTER -->
+
+  </body>
+</html>
