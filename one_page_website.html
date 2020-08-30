@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Michael's Auto Parts</title>
     <link rel="stylesheet" href="./CSS/main.css">
+    <script src="./JS/one_page_website.js" async></script>
   </head>
   
   
@@ -24,6 +25,7 @@
         </div>
       </div> 
       <a href="#how-to">How To</a>
+      <a href="#photos">Photos</a>
       <a href="#order">Order</a>
     </div>
     
@@ -96,6 +98,7 @@
             </div>
           </div>
         </section>
+        
 
        <!-- END STORE -->
       
@@ -105,7 +108,94 @@
       <!-- HOW To Section -->
 
       <!-- End HOW to section -->
-     
+      <!-- Photos Section (LightBox Section)-->
+        
+        <section id="photos">
+          <div class="photo-container">
+            <h1>Photos</h1>
+            <h3>Here are some photos of our stock!</h3>
+            
+            <div class="row">
+              <div class="column">
+                <img src="./images/brake kit.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="./images/Camshaft.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="./images/Rebuildkit.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+              </div>
+              <div class="column">
+                <img src="./images/Turbo.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+              </div>
+            </div>
+            
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">&times;</span>
+              <div class="modal-content">
+            
+                <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <img src="./images/brake kit.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <img src="./images/Camshaft.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <img src="./images/Rebuildkit.jpg" style="width:100%">
+                </div>
+                
+                <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <img src="./images/Turbo.jpg" style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+            
+            
+                <div class="column">
+                  <img class="demo cursor" src="./images/brake kit.jpg" style="width:100%" onclick="currentSlide(1)" alt="Brake Kit">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/Camshaft.jpg" style="width:100%" onclick="currentSlide(2)" alt="Camshafts">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/Rebuildkit.jpg" style="width:100%" onclick="currentSlide(3)" alt="Transmission Rebuild Kit">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/Turbo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Turbocharger">
+                </div>
+              </div>
+            </div>
+            
+            
+          
+          
+            
+          
+          </div>
+        </section>
+
+        <br>
+
+
+
+
+
+
+
+      
+
+      <!--End of Photo Section -->
 
       <!-- ORDER FORM -->
           <section id="order">
